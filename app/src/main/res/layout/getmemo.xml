@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/todaytitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="제목" />
+
+        <EditText
+            android:id="@+id/gettitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/todaytitle"
+            android:layout_marginTop="15dp"
+            android:text="제목" />
+
+        <TextView
+            android:id="@+id/todaycontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gettitle"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentLeft="true"
+            android:text="내용" />
+
+        <EditText
+            android:id="@+id/getcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/todaycontent"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="내용"/>
+
+        <Button
+            android:id="@+id/storebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="확인" />
+
+        <Button
+            android:id="@+id/getdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/getcontent"
+            android:layout_marginTop="20dp"
+            android:text="날짜선택" />
+
+        <TextView
+            android:id="@+id/selectday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/getdate"
+            android:text="날짜" />
+
+        <Button
+            android:id="@+id/speechbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectday"
+            android:layout_marginTop="20dp"
+            android:text="음성인식" />
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

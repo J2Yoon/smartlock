@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/start_tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작시간"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"/>
+
+        <TimePicker
+            android:id="@+id/start_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/end_t"
+            android:layout_alignTop="@+id/start_tt"
+            android:layout_marginTop="17dp"
+            android:timePickerMode="spinner" />
+
+        <TextView
+            android:id="@+id/end_tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="종료시간"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/start_t"
+            android:textSize="25dp"/>
+
+        <TimePicker
+            android:id="@+id/end_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/end_tt"
+            android:layout_centerHorizontal="true"
+            android:timePickerMode="spinner" />
+
+         <CheckBox
+            android:id="@+id/cb_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_below="@id/end_t"
+            android:text="월" />
+
+        <CheckBox
+            android:id="@+id/cb_tu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/end_t"
+            android:layout_toEndOf="@id/cb_m"
+            android:text="화" />
+        <CheckBox
+            android:id="@+id/cb_w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/end_t"
+            android:layout_toEndOf="@id/cb_tu"
+            android:text="수" />
+        <CheckBox
+            android:id="@+id/cb_th"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/end_t"
+            android:layout_toEndOf="@+id/cb_w"
+            android:text="목" />
+        <CheckBox
+            android:id="@+id/cb_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/end_t"
+            android:layout_toEndOf="@+id/cb_th"
+            android:text="금" />
+        <CheckBox
+            android:id="@+id/cb_sa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/end_t"
+            android:layout_toEndOf="@+id/cb_f"
+            android:text="토" />
+        <CheckBox
+            android:id="@+id/cb_su"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/end_t"
+            android:layout_toEndOf="@+id/cb_sa"
+            android:text="일" />
+
+
+        <Button
+            android:id="@+id/confirmbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="저장" />
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
